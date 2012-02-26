@@ -10,3 +10,6 @@ var sandwich = {
 // Use Object.create to generate a new Sandwich. This will use the sandwich prototype for our new object
 var my_lunch = Object.create( sandwich );
 my_lunch.name = 'big sub sandwich';
+
+//adding properties to the prototype object will show up immediately in 'my_lunch'
+sandwich.add_mustard = function(){console.log('spread mustard!')};
